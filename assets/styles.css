@@ -194,6 +194,12 @@ button{font:inherit;cursor:pointer;background:none;border:none}
   }
   .nav-dropdown a{color:rgba(255,255,255,.72);font-size:.98rem;padding:.3rem 0}
   .nav-dropdown a:hover{background:transparent;color:var(--gold)}
+  /* El menú móvil es siempre navy de fondo: el texto debe seguir siendo claro
+     aunque el nav esté en estado "scrolled" (que en escritorio lo pone navy). */
+  #nav.scrolled .nav-links a{color:var(--white)}
+  #nav.scrolled .nav-links a.active{color:var(--gold)}
+  #nav.scrolled .nav-dropdown a{color:rgba(255,255,255,.72)}
+  #nav.scrolled .nav-dropdown a:hover{color:var(--gold)}
 }
 
 @media(max-width:480px){
